@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Responsive Quiz & Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Fun Quiz & Weather App</h1>
+  </header>
+  <nav class="navbar">
+    <a href="#quiz">Quiz</a>
+    <a href="#weather">Weather</a>
+  </nav>
 
+  <main class="container">
+    <!-- Quiz Section -->
+    <section id="quiz">
+      <h2>Quick Quiz</h2>
+      <div id="quiz-container"></div>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather">
+      <h2>Weather Lookup</h2>
+      <input type="text" id="city-input" placeholder="Enter city">
+      <button id="get-weather">Get Weather</button>
+      <div id="weather-result"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
