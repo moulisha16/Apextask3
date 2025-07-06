@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  line-height: 1.6;
+}
+.navbar {
+  display: flex;
+  background: #333;
+}
+.navbar a {
+  flex: 1;
+  padding: 0.75rem;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #444;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+section {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 4px;
+}
+input, button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Mobile and tablet responsiveness */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}
